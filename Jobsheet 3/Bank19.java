@@ -1,4 +1,4 @@
-import java.util.scanner;
+import java.util.Scanner;
 
     public class Bank19{
         public static void main(String [] args){
