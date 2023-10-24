@@ -21,6 +21,11 @@ public class LinearSearch18{
                 break;
             }
         }
-        System.out.println("Key ada dalam array pada posisi indeks ke-"+hasil);
+
+        if (hasil == -1){
+            System.out.println("Key tidak ditemukan");
+        } else {
+            System.out.println("Key ada di posisi indeks ke-" +hasil);
+        }
     }
 }
