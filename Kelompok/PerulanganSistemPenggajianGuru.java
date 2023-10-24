@@ -13,7 +13,7 @@ public class PerulanganSistemPenggajianGuru {
         while (i <= jumlahKaryawan) {
             System.out.println("Pilihan status pegawai - (PNS , HONORER)");
             String konfirmasi = sc.nextLine();
-            System.out.println("Masukkan jabatan karyawan ke-" + (i=1) + ": ");
+            System.out.println("Masukkan jabatan karyawan ke-" + (i++) + ": ");
             statusPegawai = sc.nextLine();
             System.out.println("Masukkan penghasilan :");
             penghasilan = sc.nextInt();
@@ -50,7 +50,7 @@ public class PerulanganSistemPenggajianGuru {
             System.out.println("Jabatan: " + statusPegawai);
             System.out.println("Pengahasilan: " + penghasilan);
 
-             System.out.printf("gaji yang diterima adalah \n" + penghasilan );
+             System.out.printf("gaji yang diterima adalah n/" + penghasilan );
         }
             //i++;
     }   
