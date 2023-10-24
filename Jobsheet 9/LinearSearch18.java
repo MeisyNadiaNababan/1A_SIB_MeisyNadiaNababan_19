@@ -1,11 +1,21 @@
+import java.util.Scanner;
+
 public class LinearSearch18{
     public static void main(String[] args){
+        System.out.print("Masukkan jumlah elemen array: ");
+        Scanner sc= new Scanner(System.in);
+        int n= sc.nextInt();
 
-        int[] arrayInt = {34, 18, 26, 48, 72, 20, 56, 63};
-        int key= 20;
-        int hasil= 0;
+        int[] arrayInt = new int[n];
+        for (int i = 0; i < n; i++){
+            System.out.print("Masukkan elemen array ke-" +(i)+" : ");
+            arrayInt[i]= sc.nextInt();
+        }
+        System.out.print("Masukkan key yang ingin dicari: ");
+        int key= sc.nextInt();
 
-        for (int i = 0; i< arrayInt.length; i++){
+        int hasil= -1;
+        for (int i = 0; i < n; i++){
             if (arrayInt[i] == key){
                 hasil = i;
                 break;
