@@ -3,36 +3,40 @@ import java.util.Scanner;
 public class HitungNilaiArray {
 
     public static void main(String[] args) {
+        int[] data = new int[5];
+        int i, max, min, sum;
+
         Scanner input = new Scanner(System.in);
-
         System.out.print("Masukkan banyaknya elemen: ");
-        int banyakElemen = input.nextInt();
-        int[] nilai = new int[banyakElemen];
+        int n = input.nextInt();
 
-        for (int i = 0; i < banyakElemen; i++) {
+        for (i = 0; i < n; i++) {
             System.out.print("Masukkan nilai elemen ke-" + (i + 1) + ": ");
-            nilai[i] = input.nextInt();
+            data[i] = input.nextInt();
         }
-        int nilaiTertinggi = nilai[0];
-        for (int i = 1; i < banyakElemen; i++) {
-            if (nilai[i] > nilaiTertinggi) {
-                nilaiTertinggi = nilai[i];
-            }
-        }
-        int nilaiTerendah = nilai[0];
-        for (int i = 1; i < banyakElemen; i++) {
-            if (nilai[i] < nilaiTerendah) {
-                nilaiTerendah = nilai[i];
-            }
-        }
-        int totalNilai = 0;
-        for (int i = 0; i < banyakElemen; i++) {
-            totalNilai += nilai[i];
-        }
-        double nilaiRataRata = totalNilai / banyakElemen;
 
-        System.out.println("Nilai tertinggi: " + nilaiTertinggi);
-        System.out.println("Nilai terendah: " + nilaiTerendah);
-        System.out.println("Nilai rata-rata: " + nilaiRataRata);
+        max = data[0];
+        for (i = 1; i < n; i++) {
+            if (data[i] > max) {
+                max = data[i];
+            }
+        }
+
+        min = data[0];
+        for (i = 1; i < n; i++) {
+            if (data[i] < min) {
+                min = data[i];
+            }
+        }
+
+        sum = 0;
+        for (i = 0; i < n; i++) {
+            sum += data[i];
+        }
+        double avg = sum / n;
+
+        System.out.println("Nilai tertinggi: " + max);
+        System.out.println("Nilai terendah: " + min);
+        System.out.println("Rata-rata: " + avg);
     }
 }
