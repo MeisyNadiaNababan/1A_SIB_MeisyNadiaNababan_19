@@ -33,10 +33,11 @@ public class HitungNilaiArray {
         for (i = 0; i < n; i++) {
             sum += data[i];
         }
-        double avg = sum / n;
+        double avg = (double) sum / n; 
 
         System.out.println("Nilai tertinggi: " + max);
         System.out.println("Nilai terendah: " + min);
         System.out.println("Rata-rata: " + avg);
     }
 }
+
