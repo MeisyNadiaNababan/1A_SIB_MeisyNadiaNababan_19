@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.sound.midi.Soundbank;
+
 public class Bioskop18{
     public static void main (String[] args){
   
@@ -21,9 +23,12 @@ public class Bioskop18{
    System.out.println(penonton.length);
 
    for (String[] barisPenonton : penonton){
-        System.out.println("Panjang baris: " + barisPenonton.length);S
-
+        System.out.println("Panjang baris:" + barisPenonton.length);
    }
-   
-}
+
+   for (int i = 0; i < penonton.length; i++){
+    System.out.println("Penonton pada baris ke-" + (i+1) + ": " + String.join(", ", penonton[i]));
+   }
+      
     }
+}
