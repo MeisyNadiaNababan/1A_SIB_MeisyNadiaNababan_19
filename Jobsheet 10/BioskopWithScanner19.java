@@ -44,10 +44,13 @@ public class BioskopWithScanner19 {
                         for (int j = 0; j < penonton[i].length; j++) {
                             if (penonton[i][j] != null) {
                                 System.out.println("Penonton di baris " + (i + 1) + ", kolom " + (j + 1) + ": " + penonton[i][j]);
-                            }
+                            } else {
+                                System.out.println("Kursi di baris " + (i + 1) + ", kolom " + (j + 1) + ": ***");
                         }
                     }
-                    break;
+                }
+                break;
+            
                 case 3:
                     System.exit(0);
                 default:
