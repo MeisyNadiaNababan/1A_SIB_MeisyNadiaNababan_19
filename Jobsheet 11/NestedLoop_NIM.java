@@ -14,15 +14,19 @@ public class NestedLoop_NIM {
             System.out.println();
         }
 
-        // Display the array using foreach loops
-        int kotaIndex = 1;
-        for (int[] kotaTemps : temps) {
-            System.out.print("Kota ke-" + kotaIndex + ": ");
-            for (int temp : kotaTemps) {
+        // Display the array and calculate the average temperature for each city
+        for (int i = 0; i < temps.length; i++) {
+            int kotaTotal = 0; // Total temperature for the city
+            for (int j = 0; j < temps[0].length; j++) {
+                kotaTotal += temps[i][j];
+            }
+            double kotaAverage = (double) kotaTotal / temps[0].length;
+            
+            System.out.print("Kota ke-" + (i + 1) + ": ");
+            for (int temp : temps[i]) {
                 System.out.print(temp + " ");
             }
-            System.out.println();
-            kotaIndex++;
+            System.out.println("Rata-rata: " + kotaAverage);
         }
     }
 }
