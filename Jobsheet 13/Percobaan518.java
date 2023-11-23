@@ -6,7 +6,6 @@ public class Percobaan518{
         for (int i : a){
             System.out.print(i + " ");
         }
-
         System.out.println();
     }
 public static void main(String args[]){
