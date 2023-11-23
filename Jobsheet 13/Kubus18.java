@@ -10,12 +10,18 @@ public class Kubus18{
     private static int[][] nilaiMahasiswa = new int[jumlahMahasiswa][jumlahMinggu];
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        jumlahMahasiswa = input.nextInt();
+        System.out.print("Masukkan jumlah minggu: ");
+        jumlahMinggu = input.nextInt();
+        nilaiMahasiswa = new int[jumlahMahasiswa][jumlahMinggu];
+
         jumlahNilaiMahasiswa();
         tampilkanNilaiMahasiswa();
         lacakNilaiTertinggi();
         tampilMahasiswaNilaiTertimggi();
     }
-
     private static void jumlahNilaiMahasiswa() {
         Scanner input = new Scanner(System.in);
 
@@ -27,7 +33,6 @@ public class Kubus18{
             }
         }
     }
-
     private static void tampilkanNilaiMahasiswa() {
         System.out.println("                                                          DATA NILAI MAHASISWA                                                  ");
         System.out.println("                Minggu ke-1      Minggu ke-2      Minggu ke-3      Minggu ke-4      Minggu ke-5      Minggu ke-6      Minggu ke-7    ");
