@@ -1,5 +1,4 @@
 public class Programku18 {
-
     public static void TampilHinggaKei(int i) {
         for (int j = 1; j <= i; j++) {
             System.out.print(j);
