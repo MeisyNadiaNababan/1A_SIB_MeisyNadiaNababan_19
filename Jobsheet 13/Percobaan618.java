@@ -15,11 +15,11 @@ public class Percobaan618 {
         Scanner input = new Scanner(System.in);
     
     int p,l,t,L,vol;
-    System.out.println("Masukkan panjang:");
+    System.out.print("Masukkan panjang: ");
     p=input.nextInt();
-    System.out.println("Masukkan lebar");
+    System.out.print("Masukkan lebar: ");
     l=input.nextInt();
-    System.out.println("Masukkan tinggi");
+    System.out.print("Masukkan tinggi: ");
     t=input.nextInt();
 
     L=p*l;
