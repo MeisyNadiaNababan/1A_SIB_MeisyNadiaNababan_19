@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DemoProyekGajiGuru {
+public class ProyekDemoGajiGuru {
     static void beriSalam() {
         System.out.println("Selamat di sistem penggajian guru");
     }
@@ -56,7 +56,7 @@ public class DemoProyekGajiGuru {
         System.out.print("Masukkan sebagai siapa : ");
         String answer = sc.nextLine();
 
-        // Login sebagai Guru
+        // Login sebagai Admin
         if (answer.equals("Admin")) {
             boolean login = false;
 
@@ -79,7 +79,7 @@ public class DemoProyekGajiGuru {
                 }
             } while (!login);
 
-            // menu pilihan pada sistem guru
+            // menu pilihan pada sistem Admin
             System.out.println("--------------------------------------");
             System.out.println("|                                    |");
             System.out.println("|                MENU                |");
