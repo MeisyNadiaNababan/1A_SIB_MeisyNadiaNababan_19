@@ -12,7 +12,7 @@ public class DeretDescendingRekursif{
         }
     }
     public static void main (String[] args){
-        int n = ;
+        int n = 5;
 
         System.out.println("Deret Rekursif: ");
         deretRekursif(n);
