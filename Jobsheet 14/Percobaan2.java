@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class Percobaan2{
        static int hitungPangkat(int x, int y){
         if (y == 0){
@@ -17,6 +15,14 @@ public class Percobaan2{
     bilangan = sc.nextInt();
     System.out.print("Pangkat: ");
     pangkat = sc.nextInt();
+    int hasilPangkat = hitungPangkat(bilangan, pangkat);
+    System.out.print("Perhitungan pangkat : ");
+    for (int i = 0; i < pangkat; i++){
+        System.out.print(bilangan);
+        if(i < pangkat - 1){
+            System.out.print("x");
+        }
+    }
 
     System.out.println(hitungPangkat(bilangan, pangkat));
     }     
